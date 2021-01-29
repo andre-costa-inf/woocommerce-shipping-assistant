@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Andre Costa - Woocommerce Shipping Assistant
-Description: Adiciona o status Enviado, email automático para o status enviado e shortcode [woocommerce-status-checker] que pode ser adicionado no seu tema no arquivo /woocommerce/myaccount/view-order.php.
+Description: Adiciona o status Enviado, email automático para o status enviado e shortcode [woocommerce-status-checker] que pode ser adicionado em seu tema no arquivo: /woocommerce/myaccount/view-order.php.
 Version: 1.0.2
 Author: Andre Costa
 Text Domain: woocommerce-shipping-assistant
