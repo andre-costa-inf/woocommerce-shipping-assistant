@@ -3,7 +3,6 @@ defined('ABSPATH') || exit;
 
 class WC_Shortcode_Status_Checker {
     
-    
     public function __construct() {
         
         add_shortcode('woocommerce-status-checker', array( $this ,'status_checker')); 
@@ -18,11 +17,12 @@ class WC_Shortcode_Status_Checker {
     
     
     public static function status_checker() {
-    global $woocommerce, $post;
-    
-     if ( is_view_order_page() ) {
-        global $wp;
-        $order_id = wc_clean( $wp->query_vars['view-order'] );
+        global $woocommerce, $post;
+        
+        if ( is_view_order_page() ) {
+            global $wp;
+            $order_id = wc_clean( $wp->query_vars['view-order'] );
+            //TODO Testar adicionar o shortcode em outras páginas em caso o usuario erre a pagina e corrigir possiveis bugs
         $_order = wc_get_order($order_id);
         $order_id = $_order->get_id();
      }
